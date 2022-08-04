@@ -14,7 +14,8 @@
     "new": "cross-env HYGEN_TMPLS=generators hygen new"
   },
   "dependencies": {
-    "loadash": "^1.0.0",
+    "@vueuse/core": "^9.1.0",
+    "lodash": "^4.17.21",
     "pinia": "^2.0.16",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
