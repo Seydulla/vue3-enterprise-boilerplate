@@ -1,1 +1,0 @@
-// Globally register Base Components
