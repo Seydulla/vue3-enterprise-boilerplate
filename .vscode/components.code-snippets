@@ -1,0 +1,26 @@
+{
+  "BaseButton": {
+    "prefix": "BaseButton",
+    "body": ["<BaseButton>", "\t${3}", "</BaseButton>"],
+    "description": "<BaseButton>"
+  },
+  "BaseIcon": {
+    "prefix": "BaseIcon",
+    "body": ["<BaseIcon name=\"${1}\">", "\t${2}", "</BaseIcon>"],
+    "description": "<BaseIcon>"
+  },
+  "BaseInputText": {
+    "prefix": "BaseInputText",
+    "body": ["<BaseInputText ${1}/>"],
+    "description": "<BaseInputText>"
+  },
+  "BaseLink": {
+    "prefix": "BaseLink",
+    "body": [
+      "<BaseLink ${1|name,:to,href|}=\"${2:route}\">",
+      "\t${3}",
+      "</BaseLink>"
+    ],
+    "description": "<BaseLink>"
+  }
+}
