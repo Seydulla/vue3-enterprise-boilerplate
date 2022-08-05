@@ -4,13 +4,7 @@ module.exports = [
   {
     type: "input",
     name: "path",
-    message: "Path:",
-    validate(value) {
-      if (!value.length) {
-        return "Components must have a path.";
-      }
-      return true;
-    },
+    message: "Path (Write nested folders like this foo/bar):",
   },
   {
     type: "input",

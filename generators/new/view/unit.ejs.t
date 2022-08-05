@@ -1,5 +1,5 @@
 ---
-to: "src/components<%= path ? '/' + path : '' %>/<%= h.changeCase.kebab(name) %>.spec.ts"
+to: "src/views<%= path ? '/' + path : '' %>/<%= h.changeCase.kebab(name) %>.spec.ts"
 ---
 <%
   let fileName = h.changeCase.kebab(name).toLowerCase()
