@@ -21,7 +21,23 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
+    "vue/component-name-in-template-casing": "error",
+    "vue/camelcase": "error",
+    "vue/eqeqeq": "error",
+    "vue/no-boolean-default": ["error", "default-false"],
+    "vue/no-deprecated-scope-attribute": "error",
+    "vue/no-empty-pattern": "error",
+    "vue/v-slot-style": [
+      "error",
+      {
+        atComponent: "v-slot",
+        default: "v-slot",
+        named: "longform",
+      },
+    ],
+    "vue/valid-v-slot": "error",
     "vue/multi-word-component-names": "off",
+    "vue/v-on-function-call": "error",
   },
   overrides: [
     {
