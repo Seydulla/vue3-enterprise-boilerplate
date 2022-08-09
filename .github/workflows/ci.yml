@@ -22,7 +22,7 @@ jobs:
         with:
           cmd: test:unit
 
-    e2e_test:
+    e2e-test:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
