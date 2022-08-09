@@ -12,13 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Setup Node and yarn
-        uses: mskelton/setup-yarn@v1
-        with:
-        node-version: "16"
 
       - name: Install dependencies
-        run: yarn install
-
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install
       - name: Run unit tests
-        run: yarn run test:unit
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: test:unit
