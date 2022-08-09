@@ -13,14 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Setup environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
       - name: Install dependencies
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: install
+        run: yarn install
+
       - name: Run unit tests
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: test:unit
+        run: yarn test:unit
 
   e2e-test:
     runs-on: ubuntu-latest
