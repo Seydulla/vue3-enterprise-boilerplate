@@ -2,7 +2,7 @@ name: "ci"
 on:
   push:
     branches:
-      - "main"
+      - main
   pull_request:
     branches:
       - main
@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Set node version to 16
-        uses: actions/setup-node@v2
+      - name: Setup Node and yarn
+        uses: mskelton/setup-yarn@v1
         with:
-          node-version: 16
-      - run: npm ci
+        node-version: "16.x"
+
+      - name: Install dependencies
+        run: yarn install
 
       - name: Run unit tests
-        run: npm run test:unit
+        run: yarn run test:unit
