@@ -21,6 +21,8 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
     "vue/component-name-in-template-casing": "error",
     "vue/camelcase": "error",
     "vue/eqeqeq": "error",
